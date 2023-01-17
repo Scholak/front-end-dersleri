@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.item {
+    width: 1000px;
+    height: 600px;
+    display: inline-block;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.buttons {
+    margin: 0 auto;
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+
+.buttons button {
+    all: unset;
+    background: linear-gradient(to right,#0A2647, #1A0000);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.buttons button:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.left, .right {
+    all: unset;
+    padding: 12px 20px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.left {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5), transparent);
+}
+
+.right {
+    right: 0;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+}
+
+.left:hover, .right:hover {
+    background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,13 @@
+#box {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+#box.active {
+    background: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
